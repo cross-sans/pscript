@@ -21,32 +21,25 @@
 		<li>Variables are created using the "set" keyword.</li>
 		<li>Arrays are created using the "arr" keyword.</li>
 		<li>Functions are created using the "func" keyword.</li>
-		<li>Messages can be printed to the console using the "&gt;:" and ":&lt;" delimiters.</li>
-		<li>Comments can be added using the "&lt;comment&gt;" syntax.</li>
+		<li>Messages can be printed to the console using the "&gt;:" and ":&lt;" delimiters or using print().</li>
+		<li>Comments can be added using the "<<comment>>" syntax.</li>
 	</ul>
 
 	<h2>Examples</h2>
 	<p>Here are some examples of Pscript code:</p>
 	<pre>
+	
 class main[]
-    set name to input("What is your name? ")
-    set age to int(input("What is your age? "))
-    print(&gt;:"Hello, " + name + "! You are " + str(age) + " years old.":&lt;)
+	import numpy as np<<testing things on pscript and the code's translation into actual python code>>
+	set name to input("what is your name? ")
+	arr data => [2,4,5,1,6,7,4,35,63,2,3,5]
+	set age to int(input("what is your age? "))
+	print(f"hello {name}, you are {age} years old, nice to meet you")
+	print(np.sort(data))
+	print(f"{30 < 20} {30 > 20}")
 end[]
-	</pre>
-	<pre>
-class main[]
-    arr data =&gt; [2, 4, 6, 8, 10]
-    func sum(arr):
-        set total to 0
-        for num in arr:
-            set total to total + num
-        endfor
-        return total
-    endfunc
-    set result to sum(data)
-    print(&gt;:"The sum of " + str(data) + " is " + str(result) + ".":&lt;)
-end[]
+
+
 	</pre>
 
 	<h2>Conclusion</h2>
