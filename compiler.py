@@ -22,7 +22,7 @@ def compile_pscript(file_path):
     code = re.sub(r'func\s+(\w+)\s*\((.*)\)', r'def \1(\2):', code)
 
     # Replace "<comment>" with Python "# comment" syntax
-    code = re.sub(r'<(.*)>', r'# \1', code)
+    code = re.sub(r'<<(.*)>>', r'# \1', code)
 
     # Add indentation
     indent_level = 0
